@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+<input type="text" id="inputan1" value="">
+<input type="text" id="inputan2" value="">
+<input type="button" onclick="diclick()" value="test">  
+<input type="text"  id="hasil" value="">  
+</form>
+
+<script>
+    function diclick() {
+    alert('ini di click')
+        var inputan1 = document.getElementById('inputan1').value;
+        var inputan2 = document.getElementById('inputan2').value;
+        hasilgrade = grade((parseInt(inputan1) + parseInt(inputan1))/2)
+        document.getElementById('hasil').value = hasilgrade;
+    }
+    function luaspersegi(sisi) {
+        var luaspersegi = sisi *sisi;
+        return luaspersegi;
+    }
+    function dichange() {
+        document.getElementById('hasil').value =  document.getElementById('inputan1').value;
+    }
+    function dikeyup() {
+        document.getElementById('hasil').value =  document.getElementById('inputan1').value;
+    }
+    function grade(nilai) {
+        var grade = "E";
+        if (nilai>85) {
+            grade = "A"
+        } else if ((nilai<=80) && (nilai >= 85)) {
+            grade = "B+"
+        } else if ((nilai<=75) && (nilai >= 79)) {
+            grade = "B"
+        } else if ((nilai<=70) && (nilai >= 74)) {
+            grade = "C+"
+        } else if ((nilai<=65) && (nilai >= 69)) {
+            grade = "C"
+        } else if ((nilai<=60) && (nilai >= 64)) {
+            grade = "D"
+        } else (nilai<60) {
+            grade = "E"
+        }
+        return grade;
+    }
+    console.log('script ini dijalankan pada console');
+    // menampung inputan1 
+</script>
+</body>
+</html>
