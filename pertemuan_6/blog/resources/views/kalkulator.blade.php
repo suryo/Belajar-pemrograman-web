@@ -8,20 +8,20 @@
 
 <form method="post" action="{{ url('/hitung') }}">
     @csrf
-    <input type="number" name="number1" required>
-    <input type="number" name="number2" required>
-    <select name="operation">
-        <option value="add">Tambah</option>
-        <option value="subtract">Kurang</option>
-        <option value="multiply">Kali</option>
-        <option value="divide">Bagi</option>
+    <input type="number" name="angka1" required>
+    <input type="number" name="angka2" required>
+    <select name="operasi">
+        <option value="tambah">Tambah</option>
+        <option value="kurang">Kurang</option>
+        <option value="kali">Kali</option>
+        <option value="bagi">Bagi</option>
     </select>
     <button type="submit">Hitung</button>
 </form>
 
-@if (isset($result))
+@if (isset($hasil))
 <p>Hasil:
-    {{ $result }}
+    {{ $hasil }}
 </p>
 @endif
 
