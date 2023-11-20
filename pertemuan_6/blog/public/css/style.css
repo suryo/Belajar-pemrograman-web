@@ -11592,8 +11592,8 @@ html {
 
 @media (min-width: 992px) {
     #mainNav {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
+        /* padding-top: 1.5rem;
+        padding-bottom: 1.5rem; */
         transition: padding-top 0.3s, padding-bottom 0.3s;
     }
     #mainNav .navbar-brand {
@@ -11643,7 +11643,7 @@ html {
 }
 
 .masthead {
-    padding-top: calc(6rem + 74px);
+    padding-top: calc(6rem + 4px);
     padding-bottom: 6rem;
 }
 
@@ -11662,7 +11662,7 @@ html {
 
 @media (min-width: 992px) {
     .masthead {
-        padding-top: calc(6rem + 104px);
+        padding-top: calc(6rem + 4px);
         padding-bottom: 6rem;
     }
     .masthead .masthead-heading {
